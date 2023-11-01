@@ -21,30 +21,43 @@ public class UserService {
     } else {
       System.out.println("You entered your phone number incorrectly!");
     }
-
+    int u=0;
+    int l=0;
+    int d=0;
     if (user.getPassword().length() >= 8) {
       for (int i = 0; i < user.getPassword().length(); i++) {
         if (Character.isUpperCase(user.getPassword().charAt(i))) {
           n1 += 1;
           break;
+        }else {
+          u++;
         }
       }
       for (int i = 0; i < user.getPassword().length(); i++) {
         if (Character.isLowerCase(user.getPassword().charAt(i))) {
           n1 += 1;
           break;
+        }else {
+          l++;
         }
       }
       for (int i = 0; i < user.getPassword().length(); i++) {
         if (Character.isDigit(user.getPassword().charAt(i))) {
           n1 += 1;
           break;
+        }else {
+          d++;
         }
+      }
+      if(u==user.getPassword().length()){
+        System.out.println("Enter at least one uppercase letter in the password!");
+      }if(l==user.getPassword().length()){
+        System.out.println("Enter at least one lowercase letter in the password!");
+      }if(d==user.getPassword().length()){
+        System.out.println("Enter at least one number letter in the password!");
       }
       if (n1 == 3) {
         n += 1;
-      }else {
-        System.out.println("There is an error in the password!");
       }
     } else {
       System.out.println("Password must be at least 8 charactres long!");

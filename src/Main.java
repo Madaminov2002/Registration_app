@@ -5,9 +5,9 @@ import java.util.regex.Pattern;
 public class Main {
     public static void main(String[] args) {
         User user=new User("Madaminov Suhrob","suhrobjonmadaminov37@gmail.com","+998911421332",
-                "!Ss1&*(a");
+                "S12sf&*(a");
         UserService userService=new UserService();
-        userService.checkUser(user);//df
+        userService.checkUser(user);
 
     }
 }
