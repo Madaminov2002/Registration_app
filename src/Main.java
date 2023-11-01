@@ -8,6 +8,7 @@ public class Main {
                 "S12sf&*(a");
         UserService userService=new UserService();
         userService.checkUser(user);
+        System.out.println("O'zgardi");
 
     }
 }
