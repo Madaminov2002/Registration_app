@@ -7,6 +7,7 @@ public class Main {
         User user=new User("Madaminov Suhrob","suhrobjonmadaminov37@gmail.com","+998911421332",
                 "!Ss1&*(a");
         UserService userService=new UserService();
-        userService.checkUser(user);
+        userService.checkUser(user);//df
+
     }
 }
